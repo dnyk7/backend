@@ -18,3 +18,6 @@ app.include_router(
     dependencies=[Depends(deps.get_db)],
     responses={404: {"description": "Not found"}},
 )
+
+# streamlit run backend/frontend/test.py
+# uvicorn backend.main:app --reload
